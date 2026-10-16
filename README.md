@@ -82,16 +82,4 @@ netfinder/
 Double-click:
 ```
 dist\NetWatch_Native.exe
-```
-> Prompts Windows UAC for administrator permission to enable raw packet capture across all network cards.
-
-### 2. Rebuild Anytime (1-Click)
-Run from PowerShell or Command Prompt:
-```cmd
-.\build_cpp.bat
-```
-This automatically:
-1. Builds the React 18 production bundle via Vite SingleFile (`frontend/dist/index.html`).
-2. Converts the React bundle into C++ byte arrays (`cpp/include/embedded_assets.h`).
-3. Compiles the Windows resource (`netwatch.rc`) with icon and UAC manifest.
-4. Compiles all C++ sources with `g++` (`-O3`, `-std=c++17`, stripped) into `dist\NetWatch_Native.exe`.
+``` 
